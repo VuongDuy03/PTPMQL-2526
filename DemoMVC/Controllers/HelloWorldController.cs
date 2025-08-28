@@ -1,13 +1,15 @@
+
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
-namespace MvcMovie.Controllers
-{
+
+namespace DemoMVC.Controllers;
+
     public class HelloWorldController : Controller
     { 
         // GET: /HelloWorld/
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is my default action...";
+            return View();
         } 
         // GET: /HelloWorld/Welcome/ 
 
@@ -16,4 +18,5 @@ namespace MvcMovie.Controllers
             return "This is the Welcome action method...";
         }
     }
-}
+
+
